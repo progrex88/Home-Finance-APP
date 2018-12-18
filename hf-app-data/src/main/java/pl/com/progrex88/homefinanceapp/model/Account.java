@@ -8,7 +8,7 @@ public class Account {
     @Getter
     @Setter
 
-    private Long AccountID;
+    private Long accountID;
     private User user;
     private AccountStatus accountStatus;
     private DataAccessType dataAccessType;

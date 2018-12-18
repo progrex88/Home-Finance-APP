@@ -7,6 +7,7 @@ public class Person {
 
     @Getter
     @Setter
+    private Long personId;
     private String firstName;
     private String lastName;
 

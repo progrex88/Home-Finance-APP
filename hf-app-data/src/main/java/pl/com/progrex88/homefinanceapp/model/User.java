@@ -7,9 +7,9 @@ public class User extends Person {
 
     @Getter
     @Setter
-    private String username;
+    private String userName;
     private String password;
-    protected Long userID; //integer
+    protected Long userId; //integer
 
 
 
