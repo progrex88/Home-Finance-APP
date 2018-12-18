@@ -5,11 +5,9 @@ import pl.com.progrex88.homefinanceapp.model.AccountStatus;
 import pl.com.progrex88.homefinanceapp.model.DataAccessType;
 import pl.com.progrex88.homefinanceapp.model.User;
 
-import java.util.Set;
+public interface AccountService extends CrudService<Account, Long> {
 
-public interface AccountService {
 
-    Account findById(Long id);
 
     Account findByUser(User user);
 
@@ -17,7 +15,5 @@ public interface AccountService {
 
     Account findByDataAccessType(DataAccessType dataAccessType);
 
-    Account save(Account account);
 
-    Set<Account> findAll();
 }
