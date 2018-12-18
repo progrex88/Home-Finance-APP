@@ -9,7 +9,7 @@ import java.util.Set;
 
 public interface AccountService {
 
-    Account findById(Long accountID);
+    Account findById(Long id);
 
     Account findByUser(User user);
 

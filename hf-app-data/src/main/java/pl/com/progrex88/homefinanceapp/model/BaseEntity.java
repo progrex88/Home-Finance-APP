@@ -3,17 +3,12 @@ package pl.com.progrex88.homefinanceapp.model;
 import lombok.Getter;
 import lombok.Setter;
 
-public class User extends Person {
+import java.io.Serializable;
+
+public class BaseEntity implements Serializable {
 
     @Getter
     @Setter
-
-    private String userName;
-    private String password;
-
-
-
-
-
+    private Long id;
 
 }

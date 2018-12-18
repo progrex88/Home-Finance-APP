@@ -6,7 +6,7 @@ import java.util.Set;
 
 public interface PersonService {
 
-    Person finndById (Long personId);
+    Person finndById (Long id);
 
     Person save(Person person);
 

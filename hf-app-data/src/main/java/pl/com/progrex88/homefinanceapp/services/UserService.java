@@ -8,7 +8,7 @@ public interface UserService {
 
     User findByUserName(String userName);
 
-    User finndById (Long userId);
+    User finndById (Long id);
 
     User save(User user);
 
