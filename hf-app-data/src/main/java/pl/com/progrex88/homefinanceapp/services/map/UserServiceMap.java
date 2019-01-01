@@ -1,11 +1,11 @@
 package pl.com.progrex88.homefinanceapp.services.map;
 
 import pl.com.progrex88.homefinanceapp.model.User;
-import pl.com.progrex88.homefinanceapp.services.CrudService;
+import pl.com.progrex88.homefinanceapp.services.UserService;
 
 import java.util.Set;
 
-public class UserServiceMap extends AbstractMapService<User, Long> implements CrudService<User, Long> {
+public class UserServiceMap extends AbstractMapService<User, Long> implements UserService {
 
     @Override
     public Set<User> findAll() {
@@ -30,5 +30,10 @@ public class UserServiceMap extends AbstractMapService<User, Long> implements Cr
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public User findByUserName(String userName) {
+        return null;
     }
 }
