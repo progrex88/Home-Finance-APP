@@ -30,7 +30,7 @@ public class DataLoader implements CommandLineRunner {
 
         User user2 = new User();
 
-        user2.setId(1L);
+        user2.setId(2L);
         user2.setFirstName("Rade");
         user2.setLastName("Alek");
 
