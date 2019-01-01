@@ -14,7 +14,6 @@ public class DataLoader implements CommandLineRunner {
 
 
     public DataLoader(UserService userService) {
-
         this.userService = userService;
     }
 
