@@ -4,16 +4,18 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import pl.com.progrex88.homefinanceapp.model.User;
 import pl.com.progrex88.homefinanceapp.services.UserService;
-import pl.com.progrex88.homefinanceapp.services.map.UserServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
+
+
     private final UserService userService;
 
 
-    public DataLoader() {
-        userService = new UserServiceMap();
+    public DataLoader(UserService userService) {
+
+        this.userService = userService;
     }
 
     @Override

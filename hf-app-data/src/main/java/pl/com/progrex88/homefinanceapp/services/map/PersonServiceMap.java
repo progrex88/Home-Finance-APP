@@ -1,11 +1,13 @@
 package pl.com.progrex88.homefinanceapp.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.com.progrex88.homefinanceapp.model.Person;
-import pl.com.progrex88.homefinanceapp.services.CrudService;
+import pl.com.progrex88.homefinanceapp.services.PersonService;
 
 import java.util.Set;
 
-public class PersonServiceMap extends AbstractMapService<Person, Long> implements CrudService<Person, Long> {
+@Service
+public class PersonServiceMap extends AbstractMapService<Person, Long> implements PersonService {
 
     @Override
     public Set<Person> findAll() {

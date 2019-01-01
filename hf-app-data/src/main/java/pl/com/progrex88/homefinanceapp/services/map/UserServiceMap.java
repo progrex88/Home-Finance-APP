@@ -1,10 +1,12 @@
 package pl.com.progrex88.homefinanceapp.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.com.progrex88.homefinanceapp.model.User;
 import pl.com.progrex88.homefinanceapp.services.UserService;
 
 import java.util.Set;
 
+@Service
 public class UserServiceMap extends AbstractMapService<User, Long> implements UserService {
 
     @Override

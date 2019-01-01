@@ -1,11 +1,16 @@
 package pl.com.progrex88.homefinanceapp.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.com.progrex88.homefinanceapp.model.Account;
-import pl.com.progrex88.homefinanceapp.services.CrudService;
+import pl.com.progrex88.homefinanceapp.model.ENUMS.AccountStatus;
+import pl.com.progrex88.homefinanceapp.model.ENUMS.DataAccessType;
+import pl.com.progrex88.homefinanceapp.model.User;
+import pl.com.progrex88.homefinanceapp.services.AccountService;
 
 import java.util.Set;
 
-public class AccountServiceMap extends AbstractMapService<Account, Long> implements CrudService<Account, Long> {
+@Service
+public class AccountServiceMap extends AbstractMapService<Account, Long> implements AccountService {
 
     @Override
     public Set<Account> findAll() {
@@ -30,5 +35,20 @@ public class AccountServiceMap extends AbstractMapService<Account, Long> impleme
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Account findByUser(User user) {
+        return null;
+    }
+
+    @Override
+    public Account findByAccountStatus(AccountStatus accountStatus) {
+        return null;
+    }
+
+    @Override
+    public Account findByDataAccessType(DataAccessType dataAccessType) {
+        return null;
     }
 }
